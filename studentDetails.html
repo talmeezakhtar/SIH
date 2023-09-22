@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="form.css">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/62c0faf158.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Student_Login_Form</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="images/New_Emblem.png" alt="Emblem-img" height="60"></a>
+          </div>
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="images/G20_logo.png" alt="Emblem-img" height="60"></a>
+            <a class="navbar-brand" href="#"><img src="images/Final CVG Logo.jpg" alt="Emblem-img" height="60"></a>
+          </div>
+        </div>
+      </nav>
+        <!-- Section2 of Navbar -->
+      <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary py-0">
+        <div class="container-fluid py-1 gradient-background">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Get CVS</a></li>
+                  <li><a class="dropdown-item" href="#">Renew CVS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">More Services</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+<div class="container py-1 m-3">
+    <div class="container-fluid">
+      <div class="py-1 m-5">
+        <h2 class="fw-bold text-center border-bottom">Student Details</h2>
+     </div>
+     <div class="container-fluid">
+    <form action="connect.php" method="post">
+        <div class="row mb-3">
+            <label for="stdname" class="col-sm-2 col-form-label fw-bold">Student's Name:</label>
+            <div class="col-sm-4">  
+                <input type="text" id="stdname"  class="form-control " name="student-name " placeholder="Enter Name">
+            </div>
+            <label for="student-dob" class="col-sm-2 col-form-label fw-bold">Date Of Birth:</label>
+            <div class="col-sm-4">
+            <input type="date" name="student-dob" class="form-control ">
+          </div>
+        </div>    
+       
+        <div class="row  mb-3">
+            <label for="email-name"  class="col-sm-2 col-form-label fw-bold">Email:</label>
+            <div class="col-sm-4" > 
+              <input type="email" name="email-name"  class="form-control" placeholder="name@example.com">
+            </div>
+            <label for="ABC-name"  class="col-sm-2 col-form-label fw-bold">ABC-ID:</label>
+            <div class="col-sm-4">
+            <input type="text" name="ABC-name"  class="form-control" placeholder="ABC-ID">
+            </div>
+        </div>
+  
+        <div class="row mb-3">
+            <label for="acedemic-year-name"  class="col-sm-2 col-form-label fw-bold">Apply for Academic Year:</label>
+            <div class="col-sm-4">
+            <input type="number" name="acedemic-year-name" class="form-control" placeholder="Academic Year">
+          </div>
+          <label for="student-state-ut-name"  class="col-sm-2 col-form-label fw-bold">State Name/UT Name:</label>
+          <div class="col-sm-4">
+          <select name="states-ut" class="form-control">
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value=" Assam"> Assam</option>
+              <option value="">Bihar</option>
+              <option value="">Chhattisgarh</option>
+              <option value="">Goa</option>
+              <option value="">Gujarat</option>
+              <option value="">Haryana</option>
+              <option value="">Himachal Pradesh</option>
+              <option value="">Jharkhand</option>
+              <option value="">Karnataka</option>
+              <option value="">Kerala</option>
+              <option value="">Madhya Pradesh</option>
+              <option value="">Maharashtra</option>
+              <option value="">Manipur</option>
+              <option value="">Meghalaya</option>
+              <option value="">Nagaland</option>
+              <option value="">Odisha</option>
+              <option value="">Punjab</option>
+              <option value="">Rajasthan</option>
+              <option value="">Sikkim</option>
+              <option value="">Tamil Nadu</option>
+              <option value="">Telangana</option>
+              <option value="">Tripura</option>
+              <option value="">Uttar Pradesh</option>
+              <option value="">Uttarakhand</option>
+              <option value="">West Bengal</option>
+              <option value="">Lakshadweep</option>
+              <option value="">Dadra and Nagar Haveli</option>
+              <option value="">Daman and Diu</option>
+              <option value="">Puducherry</option>
+              <option value="">Chandigarh</option>
+              <option value="">Andaman and Nicobar Islands</option>
+              <option value="">Delhi</option>
+            </select>
+          </div>
+        </div>
+  
+        <div class="row mb-3">
+            <label for="district-name"  class="col-sm-2 col-form-label fw-bold">District Name:</label>
+            <div class="col-sm-4">
+            <input type="text" name="district-name" class="form-control" placeholder="District Name">
+            </div>
+            <label for="institute-name"  class="col-sm-2 col-form-label fw-bold">Institute Name:</label>
+            <div class="col-sm-4">
+            <input type="text" name="institute-name" class="form-control"  placeholder="Institute Name">
+          </div>
+        </div>
+  
+        <div class="row mb-3">
+            <label for="course-name"  class="col-sm-2 col-form-label fw-bold">Student Course Name</label>
+            <div class="col-sm-4">
+            <input type="text" name="course-name" class="form-control" placeholder="Course Name">
+          </div>
+          <label for="registration-number"  class="col-sm-2 col-form-label fw-bold">Student Registration Number</label>
+          <div class="col-sm-4">
+          <input type="number" name="registration-number"  class="form-control" placeholder="Registration Number">
+        </div>
+        </div>
+         
+        <div class="row mb-3">
+            <label for="course-name"  class="col-sm-2 col-form-label fw-bold">Student Enrollment Number/Roll Number:</label>
+            <div class="col-sm-4">
+            <input type="number" name="roll-number"   class="form-control" placeholder="Roll Number">
+            </div>
+            <label for="enrollment-year"  class="col-sm-2 col-form-label fw-bold">Student Enrollment Year</label>
+            <div class="col-sm-4">
+            <input type="number" name="enrollment-year"  class="form-control" placeholder="Enrollment Year">
+            </div> 
+        </div>
+         
+           
+        <div class="row mb-3">
+            <label for="course-session"  class="col-sm-2 col-form-label fw-bold">Student Course Session</label>
+            <div class="col-sm-4">
+            <input type="number" name="course-session"  class="form-control" placeholder="Course Session"> 
+            </div>
+            <label for="present-year"  class="col-sm-2 col-form-label fw-bold">Student Present Year</label>
+            <div class="col-sm-4">
+            <input type="number" name="present-year"  class="form-control" placeholder="Present Year">
+            </div>
+        </div>
+        
+        <div class="row mb-3">
+            <label for="class-section-name"  class="col-sm-2 col-form-label fw-bold">Student Class Section Name</label>
+            <div class="col-sm-4">
+            <input type="text" name="class-section-name"  class="form-control" placeholder="Class Section">
+            </div>
+            <label for="mode-of-study" class="col-sm-2 col-form-label fw-bold">Student Mode Of Study</label>
+            <div class="col-sm-4">
+            <select name="mode-of-study" class="form-control">
+                <option value="Andhra Pradesh">Online</option>
+                <option value="Arunachal Pradesh">Offline</option>
+                <option value=" Assam">Distance</option>
+            </select>
+            </div>
+        </div>
+    </form>
+  </div>
+    <a href="details.html" type="submit" form="form1" value="Submit"  class="btn btn-primary">Submit</a>
+</div>
+</div>
+<!-- Footer Section -->
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 m-2 border-top footer">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <img src="images/Final CVG Logo.jpg" alt="CVs=logo-img" height="80px">
+      </a>
+      <p class="text-body-secondary">© 2023</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><h4>Powered By</h4><img src="images/digital-india-logo.png" alt="digital-india-logo"></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <ul class="nav flex-column">
+        <div class="container-fluid">
+          <h4>Follow Us</h4>
+          <a href="https://www.instagram.com/y_m_rugs/"><i class="social-icon fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/aabid-ansari-74b25879/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="mailto:abid@ymrugs.com"><i class="social-icon fa-solid fa-envelope"></i></a>
+          <a href="mailto:abid@ymrugs.com"><i class="fa-brands fa-x-twitter"></i></a>
+      </ul>
+    </div>
+  </footer>
+  </body>
+</html>

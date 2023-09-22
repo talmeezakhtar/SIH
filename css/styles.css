@@ -1,0 +1,42 @@
+
+.gradient-background {
+  background: linear-gradient(300deg, #19AAD7, #0E3674,#010741);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+  }
+  
+  .profile-img {
+    height: 100px;
+    border-radius: 50%;
+  }
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+  }
+  .tales{
+    width: 100%;
+    height:23rem;
+  }
+a{
+    color: black;
+}
+.a:hover{
+    color: #8f8f88;
+}
